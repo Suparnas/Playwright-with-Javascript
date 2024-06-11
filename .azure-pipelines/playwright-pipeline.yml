@@ -1,0 +1,31 @@
+trigger:
+- main
+- master
+
+pool:
+  vmImage: 'macos-latest'
+
+steps:
+- task: UseNode@1
+  inputs:
+    version: '14.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install
+  displayName: 'Install dependencies'
+
+- script: |
+    npx playwright install --with-deps
+  displayName: 'Install Playwright browsers and dependencies'
+
+- script: |
+    npx playwright test
+  displayName: 'Run Playwright tests'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'playwright-report'
+    artifact: 'playwright-report'
+    publishLocation: 'pipeline'
+  displayName: 'Publish Playwright test report'

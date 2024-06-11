@@ -1,5 +1,5 @@
-const { test, expect } = require('@playwright/test');
-const SignInPage = require('../pages/SignInPage');
+import { test , expect } from '@playwright/test';
+import SignInPage from '../pages/SignInPage';
 
 test.describe('Facebook Sign In', () => {
     test('should sign in an existing user', async ({ page }) => {
@@ -12,7 +12,7 @@ test.describe('Facebook Sign In', () => {
         // Submit the sign-in form
         await signInPage.submitSignIn();
 
-        // Add assertions to verify successful sign-in
-        // Example: expect(page.url()).toContain('home');
+        // Assertions to verify successful sign-in
+        expect(page.url()).toContain('https://www.facebook.com/');
     });
 });

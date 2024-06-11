@@ -1,11 +1,11 @@
-const BasePage = require('./BasePage');
+import BasePage from './BasePage';
 
 class SignInPage extends BasePage {
     constructor(page) {
         super(page);
         this.emailInput = '#email';
         this.passwordInput = '#pass';
-        this.loginButton = '#loginbutton';
+        this.loginButton = '[data-testid="royal_login_button"]'; 
     }
 
     async fillSignInForm(email, password) {
@@ -17,3 +17,4 @@ class SignInPage extends BasePage {
         await this.page.click(this.loginButton);
     }
 }
+export default SignInPage;

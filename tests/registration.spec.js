@@ -1,5 +1,5 @@
-const { test, expect } = require('@playwright/test');
-const RegistrationPage = require('../pages/RegistrationPage');
+import { test, expect } from '@playwright/test';
+import RegistrationPage from '../pages/RegistrationPage';
 
 test.describe('Facebook Registration', () => {
     test('should register a new user', async ({ page }) => {
@@ -12,7 +12,7 @@ test.describe('Facebook Registration', () => {
         // Submit the registration form
         await registrationPage.submitRegistration();
 
-        // Add assertions to verify successful registration
-        // Example: expect(page.url()).toContain('confirmation');
+        // Assertions to verify successful registration
+        expect(page.url()).toContain('https://www.facebook.com/');
     });
 });

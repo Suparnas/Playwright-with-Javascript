@@ -7,9 +7,25 @@ test.describe('DemoQA Registration', () => {
         const registrationPage = new RegistrationPage(page);
         await registrationPage.navigate('https://demo.realworld.io/#/register');
 
+        const username = `${prefix}${Math.random().toString(36).substring(2, 15)}`;
+            const email = `${username}@example.com`;
+            const password = generateStrongPassword(); // Replace with your strong password generation logic
+          
+          function generateStrongPassword(length = 12) {
+            const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-=+";
+            let password = "";
+            for (let i = 0; i < length; i++) {
+              password += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return password;
+          }
         // Fill in registration form
-        await registrationPage.fillRegistrationForm('testrrrrrrrr22', 'tre2strrrrrrr2@gmail.com', 'pastrrrrrrrssword123');
+        await registrationPage.fillRegistrationForm(username, email, password);
         
+            
+
+
+
         //capctha
         //await registrationPage.solveRecaptcha();
         // Submit the registration form

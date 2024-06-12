@@ -15,9 +15,12 @@ class RegistrationPage extends BasePage {
 
     async fillRegistrationForm( userName, email,password) {
        // await this.page.click(this.openRegistrationFormButton);
-        await this.page.fill(this.userName, userName);
-        await this.page.fill(this.email, email);
-        await this.page.fill(this.passwordInput, password);
+       await this.waitForVisible(this.userName);
+       await this.page.fill(this.userName, userName);
+       await this.waitForVisible(this.email);
+       await this.page.fill(this.email, email);
+       await this.waitForVisible(this.passwordInput);
+       await this.page.fill(this.passwordInput, password);
     }
 
     // async solveRecaptcha() {
@@ -36,6 +39,7 @@ class RegistrationPage extends BasePage {
     //   }
 
     async submitRegistration() {
+        await this.waitForVisible(this.signUpButton);
         await this.page.click(this.signUpButton);
     }
 }

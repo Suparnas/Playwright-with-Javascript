@@ -9,11 +9,9 @@ class RegistrationPage extends BasePage {
         this.email = 'input[placeholder="Email"]';
         this.passwordInput = 'input[placeholder="Password"]';
         this.signUpButton = 'button[type="submit"]';
-
-
     }
 
-    async fillRegistrationForm( userName, email,password) {
+    async fillRegistrationForm(userName, email,password) {
        // await this.page.click(this.openRegistrationFormButton);
        await this.waitForVisible(this.userName);
        await this.page.fill(this.userName, userName);

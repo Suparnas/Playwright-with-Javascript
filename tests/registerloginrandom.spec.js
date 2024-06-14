@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 import RegistrationPage from '../pages/RegistrationPage';
 import SignInPage from '../pages/SignInPage';
-
 import { faker } from '@faker-js/faker';
 
 test.describe('DemoQA Registration and Login', () => {

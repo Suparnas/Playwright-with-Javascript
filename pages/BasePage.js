@@ -8,8 +8,12 @@ class BasePage {
     }
 
      async waitForVisible(selector) {
-    await this.page.waitForSelector(selector, { state: 'visible' });
-}
+        await this.page.waitForSelector(selector, {state: 'visible', timeout: 20000});
+    }
+
+      async getText(selector) {
+        return await this.page.textContent(selector); 
+    }
 }
 
 export default BasePage;

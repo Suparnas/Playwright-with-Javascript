@@ -3,9 +3,9 @@ import BasePage from './BasePage';
 class SignInPage extends BasePage {
     constructor(page) {
         super(page);
-        this.emailInput = '#email';
-        this.passwordInput = '#pass';
-        this.signinButton = '[data-testid="royal_login_button"]'; 
+        this.userNameInput = '#user-name';
+        this.passwordInput = '#password';
+        this.signinButton = '#login-button'; 
 
         this.userName = 'input[placeholder="Username"]';
         this.email = 'input[placeholder="Email"]';
@@ -14,9 +14,9 @@ class SignInPage extends BasePage {
     }
     
 
-    async fillSignInForm(email, password) {
-        await this.waitForVisible(this.emailInput);
-        await this.page.fill(this.emailInput, email);
+    async fillSignInForm(userName, password) {
+        await this.waitForVisible(this.userNameInput);
+        await this.page.fill(this.userNameInput, userName);
         await this.waitForVisible(this.passwordInput);
         await this.page.fill(this.passwordInput, password);
     }

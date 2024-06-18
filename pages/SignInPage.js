@@ -5,7 +5,9 @@ class SignInPage extends BasePage {
         super(page);
         this.userNameInput = '#user-name';
         this.passwordInput = '#password';
-        this.signinButton = '#login-button'; 
+        this.signinButton = '#login-button';
+        this.hamburger = '#react-burger-menu-btn'; 
+        this.logOut = '#logout_sidebar_link';
 
         this.userName = 'input[placeholder="Username"]';
         this.email = 'input[placeholder="Email"]';
@@ -35,6 +37,13 @@ class SignInPage extends BasePage {
     async submitLogin() {
         await this.waitForVisible(this.loginButton);
         await this.page.click(this.loginButton);
+    }
+
+    async userlogOut() {
+        await this.waitForVisible(this.hamburger);
+        await this.page.click(this.hamburger);
+        //await this.waitForVisible(this.logOut);
+        await this.page.click(this.logOut);
     }
 
 }

@@ -22,21 +22,29 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? process.env.CI_WORKERS || 2 : process.env.LOCAL_WORKERS || 4,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  //reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
       headless: false,
       viewport: { width: 1280, height: 720 },
       actionTimeout: 10000,
       ignoreHTTPSErrors: true,
-      video: 'on-first-retry',
+      video: 'on',
     
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    //trace: 'on-first-retry',
+    screenshot: 'on',
+    trace: 'retain-on-failure',
   },
+  reporter: [
+    ['list'],
+    ['html', { open: 'always' }],
+    ['dot'],
+    ['json', { outputFile: 'test-results.json' }],
+  ],
 
   /* Configure projects for major browsers */
   projects: [

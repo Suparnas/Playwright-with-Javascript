@@ -1,0 +1,833 @@
+{
+  "config": {
+    "configFile": "/Users/suparnasoman/Documents/Playwright-with-Javascript/playwright.config.js",
+    "rootDir": "/Users/suparnasoman/Documents/Playwright-with-Javascript/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/suparnasoman/Documents/Playwright-with-Javascript/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/suparnasoman/Documents/Playwright-with-Javascript/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/suparnasoman/Documents/Playwright-with-Javascript/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.44.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api.spec.js",
+      "file": "api.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "ASIN Data API Tests",
+          "file": "api.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should check for API",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 20952,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:45.859Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-chromium/test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-chromium/test-finished-3.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8747e39b871de0524be5-9fee6ad62683cbe0b086",
+              "file": "api.spec.js",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "should check for API",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "status": "passed",
+                      "duration": 12118,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:48.907Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-firefox/test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-firefox/test-finished-3.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8747e39b871de0524be5-a43a5d66e783db2ba12a",
+              "file": "api.spec.js",
+              "line": 17,
+              "column": 7
+            },
+            {
+              "title": "should check for API",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "status": "passed",
+                      "duration": 13976,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:55.165Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-webkit/test-finished-2.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/api-ASIN-Data-API-Tests-should-check-for-API-webkit/test-finished-3.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8747e39b871de0524be5-f9d84c5abd74d08d0f77",
+              "file": "api.spec.js",
+              "line": 17,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "home.spec.js",
+      "file": "home.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home Page test",
+          "file": "home.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should check for logo text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 1842,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:46.332Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/home-Home-Page-test-should-check-for-logo-text-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/home-Home-Page-test-should-check-for-logo-text-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-5896097f074b9280c183",
+              "file": "home.spec.js",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "should check for logo text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 1513,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:50.375Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/home-Home-Page-test-should-check-for-logo-text-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/home-Home-Page-test-should-check-for-logo-text-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-759c147eacd47eaa80b9",
+              "file": "home.spec.js",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "should check for logo text",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 915,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:55.996Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/home-Home-Page-test-should-check-for-logo-text-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/home-Home-Page-test-should-check-for-logo-text-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-07d5041d70a0e283a512",
+              "file": "home.spec.js",
+              "line": 5,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "registerloginrandom.spec.js",
+      "file": "registerloginrandom.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DemoQA Registration and Login",
+          "file": "registerloginrandom.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should register a new user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "status": "passed",
+                      "duration": 2799,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:46.346Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-7b2d2--should-register-a-new-user-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-7b2d2--should-register-a-new-user-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "160b57ca05341226cd9f-e41285ac746b94d4886e",
+              "file": "registerloginrandom.spec.js",
+              "line": 16,
+              "column": 9
+            },
+            {
+              "title": "should login with registered user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "status": "passed",
+                      "duration": 1916,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:46.345Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-8d328--login-with-registered-user-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-8d328--login-with-registered-user-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "160b57ca05341226cd9f-15b286ee267281c9a9a0",
+              "file": "registerloginrandom.spec.js",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "should register a new user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "status": "passed",
+                      "duration": 2411,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:51.605Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-7b2d2--should-register-a-new-user-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-7b2d2--should-register-a-new-user-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "160b57ca05341226cd9f-3b235290f05787d09318",
+              "file": "registerloginrandom.spec.js",
+              "line": 16,
+              "column": 9
+            },
+            {
+              "title": "should login with registered user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 880,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:52.290Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-8d328--login-with-registered-user-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-8d328--login-with-registered-user-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "160b57ca05341226cd9f-e4d82142ee5a014940a1",
+              "file": "registerloginrandom.spec.js",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "should register a new user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 1727,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:57.041Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-7b2d2--should-register-a-new-user-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-7b2d2--should-register-a-new-user-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "160b57ca05341226cd9f-2469c09e9be85c7497e2",
+              "file": "registerloginrandom.spec.js",
+              "line": 16,
+              "column": 9
+            },
+            {
+              "title": "should login with registered user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 753,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:58.773Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-8d328--login-with-registered-user-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-8d328--login-with-registered-user-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "160b57ca05341226cd9f-ba014e985f6a1b0b95eb",
+              "file": "registerloginrandom.spec.js",
+              "line": 29,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "signin.spec.js",
+      "file": "signin.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "sauceDemo Sign In and Sign out",
+          "file": "signin.spec.js",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should sign in an existing user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 2209,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:48.530Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/signin-sauceDemo-Sign-In-a-7f799-ld-sign-in-an-existing-user-chromium/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/signin-sauceDemo-Sign-In-a-7f799-ld-sign-in-an-existing-user-chromium/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7e4b17e2c83b0d6a3f45-09bb9aef8eef243860df",
+              "file": "signin.spec.js",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "should sign in an existing user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "status": "passed",
+                      "duration": 1842,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:53.176Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/signin-sauceDemo-Sign-In-a-7f799-ld-sign-in-an-existing-user-firefox/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/signin-sauceDemo-Sign-In-a-7f799-ld-sign-in-an-existing-user-firefox/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7e4b17e2c83b0d6a3f45-0ded87f7d10b33ef05c5",
+              "file": "signin.spec.js",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "should sign in an existing user",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "status": "passed",
+                      "duration": 1638,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-06-18T19:52:59.531Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/signin-sauceDemo-Sign-In-a-7f799-ld-sign-in-an-existing-user-webkit/test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/signin-sauceDemo-Sign-In-a-7f799-ld-sign-in-an-existing-user-webkit/video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7e4b17e2c83b0d6a3f45-6dd3023574267941a30f",
+              "file": "signin.spec.js",
+              "line": 5,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-06-18T19:52:44.831Z",
+    "duration": 25295.905,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

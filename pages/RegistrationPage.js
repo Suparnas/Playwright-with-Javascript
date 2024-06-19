@@ -9,6 +9,8 @@ class RegistrationPage extends BasePage {
         this.email = 'input[placeholder="Email"]';
         this.passwordInput = 'input[placeholder="Password"]';
         this.signUpButton = 'button[type="submit"]';
+        //this.error = 'ul.error-messages';
+        this.error = '//ul[@class="error-messages"]/li';
     }
 
     async fillRegistrationForm(userName, email,password) {
@@ -21,24 +23,22 @@ class RegistrationPage extends BasePage {
        await this.page.fill(this.passwordInput, password);
     }
 
-    // async solveRecaptcha() {
-    //     // Wait for the reCAPTCHA widget to load
-    //     const recaptchaElement = await this.page.waitForSelector('iframe[title="reCAPTCHA"]', { timeout: 10000 });
-      
-    //     // Get the reCAPTCHA challenge
-    //     const recaptchaChallenge = await this.page.solveRecaptcha(recaptchaElement, {
-    //         provider: {
-    //           id: 'canvas',
-    //           canvas: await createCanvas(300, 200),
-    //         },
-    //       });
-      
-    //     return recaptchaChallenge;
-    //   }
-
     async submitRegistration() {
         await this.waitForVisible(this.signUpButton);
         await this.page.click(this.signUpButton);
+    }
+
+    async errortext() {
+
+        //return await this.getInnerText(this.error);       //return await this.getText(this.error);
+       await this.page.waitForSelector('xpath=//ul[class="error-messages"]/li');
+        console.log( await this.getText('xpath=//ul[class="error-messages"]/li'));
+       // return await this.getText(test);   
+      // const errorElement = await this.page.locator("//ul[@class='error-messages']//li").nth(0);
+
+      // const elements = await  this.getText(firstError);
+       //console.log(firstError);
+       
     }
 }
 

@@ -14,6 +14,10 @@ class BasePage {
       async getText(selector) {
         return await this.page.textContent(selector); 
     }
+
+    async getInnerText(selector) {
+        return await this.page.innerText(selector); 
+    }
 }
 
 export default BasePage;

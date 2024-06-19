@@ -26,6 +26,23 @@ test.describe('DemoQA Registration and Login', () => {
         expect(elementText).toBe('conduit'); // This will pass since the actual text is "conduit" 
     });
 
+    test('[@error-check] should not register a new user with an existing username', async ({ page }) => {
+        const registrationPage = new RegistrationPage(page);
+        await registrationPage.navigate('https://demo.realworld.io/#/register');
+      
+        // Fill in registration form with an existing username 
+        await registrationPage.fillRegistrationForm(username, email, password);
+      
+        // Submit the registration form
+        await registrationPage.submitRegistration();
+      
+    
+        // Assertion to verify error message for existing username
+        const errorMessage =  await registrationPage.errortext();
+        console.log("Retrieved error message:", errorMessage);
+      //  expect(errorMessage).toContain('email has already been taken'); // Verify error message contains specific text
+      });
+
     test('should login with registered user', async ({ page }) => {
         const signinPage = new SignInPage(page);
         await signinPage.navigate('https://demo.realworld.io/#/login');

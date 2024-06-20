@@ -9,8 +9,7 @@ class RegistrationPage extends BasePage {
         this.email = 'input[placeholder="Email"]';
         this.passwordInput = 'input[placeholder="Password"]';
         this.signUpButton = 'button[type="submit"]';
-        //this.error = 'ul.error-messages';
-        this.error = '//ul[@class="error-messages"]/li';
+        this.error = 'li.ng-binding.ng-scope:has-text("email has already been taken")';
     }
 
     async fillRegistrationForm(userName, email,password) {
@@ -29,16 +28,10 @@ class RegistrationPage extends BasePage {
     }
 
     async errortext() {
-
-        //return await this.getInnerText(this.error);       //return await this.getText(this.error);
-       await this.page.waitForSelector('xpath=//ul[class="error-messages"]/li');
-        console.log( await this.getText('xpath=//ul[class="error-messages"]/li'));
-       // return await this.getText(test);   
-      // const errorElement = await this.page.locator("//ul[@class='error-messages']//li").nth(0);
-
-      // const elements = await  this.getText(firstError);
-       //console.log(firstError);
-       
+        const errorLocator = this.page.locator(this.error);
+        const firstError = await errorLocator.first();
+        console.log(await firstError.textContent());
+        return firstError.textContent();
     }
 }
 

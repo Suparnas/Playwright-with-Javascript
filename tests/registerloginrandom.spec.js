@@ -13,7 +13,7 @@ test.describe('DemoQA Registration and Login', () => {
         password = faker.internet.password();
     });
 
-    test('should register a new user', async ({ page }) => {
+    test('Should register a new user', async ({ page }) => {
         const registrationPage = new RegistrationPage(page);
         await registrationPage.navigate('https://demo.realworld.io/#/register');
         // Fill in registration form
@@ -24,10 +24,10 @@ test.describe('DemoQA Registration and Login', () => {
         const elementLocator = page.locator('h1.logo-font');  // Target the h1 element
         const elementText = await elementLocator.innerText();
         expect(elementText).toBe('conduit'); // This will pass since the actual text is "conduit" 
-    });
+    
 
-    test('[@error-check] should not register a new user with an existing username', async ({ page }) => {
-        const registrationPage = new RegistrationPage(page);
+  // test('[@error-check] should not register a new user with an existing username', async ({ page }) => {
+    //     const registrationPage = new RegistrationPage(page);
         await registrationPage.navigate('https://demo.realworld.io/#/register');
       
         // Fill in registration form with an existing username 
@@ -35,14 +35,14 @@ test.describe('DemoQA Registration and Login', () => {
       
         // Submit the registration form
         await registrationPage.submitRegistration();
-      
     
         // Assertion to verify error message for existing username
         const errorMessage =  await registrationPage.errortext();
-        console.log("Retrieved error message:", errorMessage);
-      //  expect(errorMessage).toContain('email has already been taken'); // Verify error message contains specific text
-      });
-
+        //console.log("Retrieved error message:", errorMessage);
+        expect(errorMessage).toContain('email has already been taken'); // Verify error message contains specific text
+      
+    //})
+ });
     test('should login with registered user', async ({ page }) => {
         const signinPage = new SignInPage(page);
         await signinPage.navigate('https://demo.realworld.io/#/login');
@@ -53,17 +53,5 @@ test.describe('DemoQA Registration and Login', () => {
 
         // Login test assertions (e.g., check if user is logged in)
     });
-});
-
-       
-        //capctha
-        //await registrationPage.solveRecaptcha();
-       ;
-
-        // // Verify the alert content
-        // const alertContent = dialog.message();
-        // expect(alertContent).toBe('Registration successful!');
-
-        // // Close the alert
-        // await dialog.dismiss();
     
+});

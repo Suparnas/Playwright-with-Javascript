@@ -120,12 +120,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 20273,
+                      "duration": 20676,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:26.288Z",
+                      "startTime": "2024-06-24T21:04:43.235Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -168,12 +168,12 @@
                     {
                       "workerIndex": 4,
                       "status": "passed",
-                      "duration": 18790,
+                      "duration": 11779,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:29.324Z",
+                      "startTime": "2024-06-24T21:04:46.024Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -216,12 +216,12 @@
                     {
                       "workerIndex": 7,
                       "status": "passed",
-                      "duration": 14387,
+                      "duration": 10136,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:35.012Z",
+                      "startTime": "2024-06-24T21:04:51.930Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -281,12 +281,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 1548,
+                      "duration": 1496,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:26.749Z",
+                      "startTime": "2024-06-24T21:04:43.721Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -324,12 +324,12 @@
                     {
                       "workerIndex": 5,
                       "status": "passed",
-                      "duration": 1473,
+                      "duration": 1368,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:30.647Z",
+                      "startTime": "2024-06-24T21:04:47.625Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -367,12 +367,12 @@
                     {
                       "workerIndex": 8,
                       "status": "passed",
-                      "duration": 888,
+                      "duration": 886,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:36.363Z",
+                      "startTime": "2024-06-24T21:04:53.086Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -427,7 +427,7 @@
                     {
                       "workerIndex": 2,
                       "status": "passed",
-                      "duration": 2741,
+                      "duration": 2695,
                       "errors": [],
                       "stdout": [
                         {
@@ -436,7 +436,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:26.748Z",
+                      "startTime": "2024-06-24T21:04:43.721Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -474,12 +474,12 @@
                     {
                       "workerIndex": 3,
                       "status": "passed",
-                      "duration": 1846,
+                      "duration": 1656,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:26.748Z",
+                      "startTime": "2024-06-24T21:04:43.722Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -517,7 +517,7 @@
                     {
                       "workerIndex": 6,
                       "status": "passed",
-                      "duration": 2759,
+                      "duration": 2647,
                       "errors": [],
                       "stdout": [
                         {
@@ -526,7 +526,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:31.335Z",
+                      "startTime": "2024-06-24T21:04:48.324Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -564,12 +564,12 @@
                     {
                       "workerIndex": 5,
                       "status": "passed",
-                      "duration": 1346,
+                      "duration": 845,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:32.489Z",
+                      "startTime": "2024-06-24T21:04:49.373Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -594,7 +594,7 @@
             },
             {
               "title": "Should register a new user",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -606,57 +606,32 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "status": "failed",
-                      "duration": 21718,
-                      "error": {
-                        "message": "TimeoutError: page.waitForSelector: Timeout 20000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('input[placeholder=\"Username\"]') to be visible\u001b[22m\n",
-                        "stack": "TimeoutError: page.waitForSelector: Timeout 20000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('input[placeholder=\"Username\"]') to be visible\u001b[22m\n\n    at RegistrationPage.waitForVisible (/Users/suparnasoman/Documents/Playwright-with-Javascript/pages/BasePage.js:11:25)\n    at RegistrationPage.fillRegistrationForm (/Users/suparnasoman/Documents/Playwright-with-Javascript/pages/RegistrationPage.js:17:19)\n    at /Users/suparnasoman/Documents/Playwright-with-Javascript/tests/registerloginrandom.spec.js:34:32",
-                        "location": {
-                          "file": "/Users/suparnasoman/Documents/Playwright-with-Javascript/pages/BasePage.js",
-                          "column": 25,
-                          "line": 11
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m../pages/BasePage.js:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m      \u001b[36masync\u001b[39m waitForVisible(selector) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m {state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m20000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     }\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m       \u001b[36masync\u001b[39m getText(selector) {\u001b[0m"
-                      },
-                      "errors": [
+                      "status": "passed",
+                      "duration": 1793,
+                      "errors": [],
+                      "stdout": [
                         {
-                          "location": {
-                            "file": "/Users/suparnasoman/Documents/Playwright-with-Javascript/pages/BasePage.js",
-                            "column": 25,
-                            "line": 11
-                          },
-                          "message": "TimeoutError: page.waitForSelector: Timeout 20000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('input[placeholder=\"Username\"]') to be visible\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/BasePage.js:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m\n \u001b[90m 10 |\u001b[39m      \u001b[36masync\u001b[39m waitForVisible(selector) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForSelector(selector\u001b[33m,\u001b[39m {state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m20000\u001b[39m})\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 12 |\u001b[39m     }\n \u001b[90m 13 |\u001b[39m\n \u001b[90m 14 |\u001b[39m       \u001b[36masync\u001b[39m getText(selector) {\u001b[0m\n\n\u001b[2m    at RegistrationPage.waitForVisible (/Users/suparnasoman/Documents/Playwright-with-Javascript/pages/BasePage.js:11:25)\u001b[22m\n\u001b[2m    at RegistrationPage.fillRegistrationForm (/Users/suparnasoman/Documents/Playwright-with-Javascript/pages/RegistrationPage.js:17:19)\u001b[22m\n\u001b[2m    at /Users/suparnasoman/Documents/Playwright-with-Javascript/tests/registerloginrandom.spec.js:34:32\u001b[22m"
+                          "text": "\n      email has already been taken\n    \n"
                         }
                       ],
-                      "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:37.367Z",
+                      "startTime": "2024-06-24T21:04:54.081Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-462ca--Should-register-a-new-user-webkit/test-failed-1.png"
+                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-462ca--Should-register-a-new-user-webkit/test-finished-1.png"
                         },
                         {
                           "name": "video",
                           "contentType": "video/webm",
                           "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-462ca--Should-register-a-new-user-webkit/video.webm"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "/Users/suparnasoman/Documents/Playwright-with-Javascript/test-results/registerloginrandom-DemoQA-462ca--Should-register-a-new-user-webkit/trace.zip"
                         }
-                      ],
-                      "errorLocation": {
-                        "file": "/Users/suparnasoman/Documents/Playwright-with-Javascript/pages/BasePage.js",
-                        "column": 25,
-                        "line": 11
-                      }
+                      ]
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "160b57ca05341226cd9f-a080b6da9ca913a31439",
@@ -677,14 +652,14 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 9,
+                      "workerIndex": 8,
                       "status": "passed",
-                      "duration": 1136,
+                      "duration": 658,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:48.865Z",
+                      "startTime": "2024-06-24T21:04:55.877Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -739,12 +714,12 @@
                     {
                       "workerIndex": 1,
                       "status": "passed",
-                      "duration": 1967,
+                      "duration": 1959,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:28.660Z",
+                      "startTime": "2024-06-24T21:04:45.593Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -782,12 +757,12 @@
                     {
                       "workerIndex": 5,
                       "status": "passed",
-                      "duration": 1688,
+                      "duration": 1929,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:33.840Z",
+                      "startTime": "2024-06-24T21:04:50.225Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -823,14 +798,14 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 8,
                       "status": "passed",
-                      "duration": 1831,
+                      "duration": 1593,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-06-20T19:39:49.801Z",
+                      "startTime": "2024-06-24T21:04:56.538Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -860,11 +835,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-06-20T19:39:25.319Z",
-    "duration": 33854.686,
-    "expected": 14,
+    "startTime": "2024-06-24T21:04:42.150Z",
+    "duration": 23596.315000000002,
+    "expected": 15,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
